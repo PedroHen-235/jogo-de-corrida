@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+      // Configuração do Firebase do seu aplicativo da web
+      const firebaseConfig = {
+        apiKey: "AIzaSyBWB79WXxltvO832hjC3rO69Vp4QwZCmDI",
+  authDomain: "jogo-de-corrida-e5235.firebaseapp.com",
+  databaseURL: "https://jogo-de-corrida-e5235-default-rtdb.firebaseio.com",
+  projectId: "jogo-de-corrida-e5235",
+  storageBucket: "jogo-de-corrida-e5235.appspot.com",
+  messagingSenderId: "61698258001",
+  appId: "1:61698258001:web:0776498c53c8abc7733470"
+};
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
